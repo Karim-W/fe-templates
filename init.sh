@@ -23,7 +23,7 @@ if [ -z "$project_name" ]; then
 fi
 
 ## Clone the temlate repository
-git clone github.com/karim-w/fe-templates .ft || { echo "Failed to clone template repository."; exit 1; }
+git clone https://github.com/karim-w/fe-templates .ft || { echo "Failed to clone template repository."; exit 1; }
 
 echo "Creating project '$project_name' with template '$template'..."
 
