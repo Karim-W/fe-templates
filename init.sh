@@ -37,7 +37,7 @@ rm -rf .ft
 
 cd "$project_name" || { echo "Failed to change directory to '$project_name'."; exit 1; }
 
-find ./ -type f -name "*" -exec sed -i "s/{{}.APP_NAME}/$project_name/g" {} \;
+find ./ -type f -name "*" -exec sed -i "s/{{.APP_NAME}}/$project_name/g" {} \;
 
 echo "Project '$project_name' created successfully with template '$template'."
 
